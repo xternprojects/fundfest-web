@@ -9,6 +9,7 @@
 		<meta name="keywords" content="grid, layout, effect, animated, responsive, magazine, template, web design" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
+		  <link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/style2.css" />
@@ -21,10 +22,48 @@
 	</head>
 	<body>
 
-<div class="top-bar">
-	<br>
-	<br>
-</div>
+    <!-- nav -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container2">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand page-scroll" href="#page-top">FundFest</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#fund">Fund</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#something">Something</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="calendar.html">Calendar</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="projects/index.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
 		<div class="container">
 			<button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
@@ -562,6 +601,8 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+    	<script src="js/scrolling-nav.js"></script>
 
 		<script src="loading/js/masonry.pkgd.min.js"></script>
 		<script src="loading/js/imagesloaded.js"></script>

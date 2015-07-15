@@ -1,7 +1,7 @@
 /* Set everything to take full height */
 html,
 body,
-.container,
+.containerwobbly,
 .slideshow,
 .slideshow ul,
 .slideshow ul li,
@@ -167,6 +167,11 @@ body,
 	margin: 0 auto 50px;
 	width: 50%;
 	max-width: 160px;
+}
+
+.blockquotewobbly
+{
+	border-left: none;
 }
 
 @media screen and (max-width: 32em) {

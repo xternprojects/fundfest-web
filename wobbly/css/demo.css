@@ -9,28 +9,13 @@
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
-*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
-body {
-	background: #fffcf5;
-	color: #fffce1;
-	font-weight: 400;
-	font-size: 1em;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
-a {
-	color: #c94e50;
-	text-decoration: none;
-	outline: none;
-}
 
-a:hover, a:focus {
-	color: #4681a0;
-	outline: none;
-}
+
+
 
 button:focus {
 	outline: none;

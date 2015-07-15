@@ -18,6 +18,16 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/circle.css" />
 
+    <link href='http://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="wobbly/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="wobbly/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="wobbly/css/slideshow.css" />
+    <script src="wobbly/js/snap.svg-min.js"></script>
+    <script src="wobbly/js/modernizr.custom.js"></script>
+
+
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -79,8 +89,64 @@
 
 <section id="banner" class="banner-section">
 <div class="banner" style="height: 600px">
+  <div class="containerwobbly">
+    <div id="slideshow" class="slideshow">
+      <ul>
+        <li>
+          <div class="slide">
+            <img class="icon" src="wobbly/img/icons/heart.svg" alt="Heart Icon"/>
+            <h1>Benny Boy</h1>
+          </div>
+        </li>
+        <li>
+          <div class="slide">
+            <img class="icon" src="wobbly/img/icons/heart.svg" alt="Heart Icon"/>
+            <blockquote class="blockquotewobbly">
+              <p>I judge everyone based on their hairstyle</p>
+            </blockquote>
+            <p>Benny boy</p>
+          </div>
+        </li>
+        <li>
+          <div class="slide">
+            <img class="icon" src="wobbly/img/icons/heart.svg" alt="Heart Icon"/>
+            <blockquote class="blockquotewobbly">
+              <p>I wanna suck your hair</p>
+            </blockquote>
+            <p>Benny boy</p>
+          </div>
+        </li>
+        <li>
+          <div class="slide">
+            <img class="icon" src="wobbly/img/icons/heart.svg" alt="Heart Icon"/>
+            <blockquote class="blockquotewobbly">
+              <p>You're special like a burrito.</p>
+            </blockquote>
+            <p>Benny boy</p>
+          </div>
+        </li>
+        <li>
+          <div class="slide">
+            <img class="icon" src="wobbly/img/icons/heart.svg" alt="Heart Icon"/>
+            <blockquote class="blockquotewobbly">
+              <p>I love the womb. Sometimes I hang out there.</p>
+            </blockquote>
+            <p>Benny boy</p>
+          </div>
+        </li>
+        <li>
+          <div class="slide">
+            <img class="icon" src="wobbly/img/icons/heart.svg" alt="Heart Icon"/>
+            <blockquote class="blockquotewobbly">
+              <p>I'm going to pee in everyone's faces.</p>
+            </blockquote>
+            <p>Benny boy</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div><!-- /container -->
 
-                <iframe src="wobbly/index.html" width="100%" height="100%" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -146,6 +212,17 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+
+    <!-- slideshow -->
+    <script src="wobbly/js/classie.js"></script>
+    <script src="wobbly/js/sliderFx.js"></script>
+    <script>
+      (function() {
+        new SliderFx( document.getElementById('slideshow'), {
+          easing : 'cubic-bezier(.8,0,.2,1)'
+        } );
+      })();
+    </script>
 
 </body>
 

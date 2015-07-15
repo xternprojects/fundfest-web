@@ -124,6 +124,9 @@
 		if( this.itemsCount > 1 ) {
 			this.navPrev.addEventListener( 'click', function() { self._navigate( 'prev' ) } );
 			this.navNext.addEventListener( 'click', function() { self._navigate( 'next' ) } );
+			self.timer = setInterval(function() {
+				self._navigate( 'next' );
+			}, 6000);
 
 			var transitionendfn = function() { self.isAnimating = false; };
 			if( support ) {
@@ -151,6 +154,7 @@
 	}
 
 	SliderFx.prototype._navigate = function( dir ) {
+		var self = this;
 		// do nothing if the itemsList is currently moving
 		if( this.isAnimating || dir === 'next' && this.curr >= this.itemsCount - 1 || dir === 'prev' && this.curr <= 0 ) {
 			return false;
@@ -167,6 +171,11 @@
 		}
 		// slide
 		this._slide();
+
+		clearInterval(self.timer);
+		self.timer = setInterval(function() {
+			self._navigate( 'next' );
+		}, 6000);
 	}
 
 	SliderFx.prototype._slide = function() {

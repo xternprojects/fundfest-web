@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>MakeIndy</title>
+    <title>Get Involved | MakeIndy</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aboutUs.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,59 +27,44 @@
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a class="navbar-brand" style="margin-top: -8px" href="index.html"><img style="height: 35px;" src="logoInverted.svg"></a></img>
+            <a class="navbar-brand" href="#">MakeIndy</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="aboutUs.html">ABOUT US</a></li>
+              <li><a href="#">ABOUT US</a></li>
               <li><a href="#">GET INVOLVED</a></li>
               <li><a href="#">PROJECTS</a></li>
               <li><a href="#">SCHEDULE</a></li>
               <li><a href="#">MAP</a></li>
+              <!-- <li><div class="divider"></div></li> -->
+              <!-- <li><a href="#">LOGIN</a></li> -->
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
+      <div id="map"></div>
 
-      <!-- <div class="banner">
-          <div
-      </div> -->
-      <div class="jumbotron banner">
-      <div class="container" style="margin-top:-30px">
-        <h1><img src="logo.svg"></h1></img>
-      </div>
+
+      <!-- <footer>
+        <p>© 2016 MakeIndy</p>
+      </footer> -->
     </div>
-      <div class="container">
-        <br>
-      <!-- Example row of columns -->
-      <div class="row promotionRow">
-        <div class="col-md-4 promotion">
-          <div style= "padding: 20px 20px;">
-              <h2 style="margin-top: 0px; margin-bottom: 15px; font-weight:200;">Where potential meets reality</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 
-          </div>
-        </div>
-        <div class="col-md-4 promotion">
-            <div style= "padding: 20px 20px;">
-                <h2 style="margin-top: 0px; margin-bottom: 15px; font-weight:200;">Where ideas meet marketplace</h2></font>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <script>
 
-            </div>
-       </div>
-        <div class="col-md-4 promotion">
-            <div style= "padding: 20px 20px;">
-                <h2 style="margin-top: 0px; margin-bottom: 15px; font-weight: 200;">Where people meet people</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+          });
+        }
 
-            </div>
-        </div>
-      </div>
-
-
-    </div>
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

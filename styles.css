@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#000000;
+    color:white;
+    /*background-image:url(debut_dark.png);*/
+}
+
+.banner {
+    /*background-color:#303030;*/
+    background-image:url(bannerBG.png);
+    background-position: center bottom;
+    height:500px;
+    width:100%;
+    margin-top:-100px;
+    padding-top:150px;
+    text-align:center;
+
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+
+.navbar {
+    background: rgba(0, 0, 0, 0.75);
+    border-radius:0px;
+    border:none;
+}
+
+.navbar-default .navbar-brand{
+    color:white;
+    font-weight:bold;
+
+
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:white;
+    font-weight:bold;
+
+  }
+
+    .promotionRow {
+/*    margin-top:30px;*/
+}
+
+.promotion div {
+    background: rgba(45, 45, 45, 0.5);
+    padding:15px;
+    border-radius:5px;
+}
+
+
+
+footer {
+    text-align:center;
+}

@@ -45,6 +45,7 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
+      <div class="contentDiv">
       <div class="row">
           <div class="container">
               <div class="col-md-10 col-md-offset-1">
@@ -54,21 +55,21 @@
                           <div>
                               <h2>Be A Maker</h2>
                               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                              <p><a class="btn btn-primary" href="#" role="button">Register a Project »</a></p>
+                              <p><a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#myModal">Register a Project <span class="glyphicon glyphicon-menu-right"></span></a></p>
                           </div>
                       </div>
                       <div class="col-md-4">
                           <div>
                               <h2>Be A Sponsor</h2>
                               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                              <p><a class="btn btn-primary" href="#" role="button">Register as a Sponsor »</a></p>
+                              <p><a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#myModal">Register as a Sponsor <span class="glyphicon glyphicon-menu-right"></span></a></p>
                           </div>
                       </div>
                       <div class="col-md-4">
                           <div>
                               <h2>Be There!</h2>
                               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                              <p><a class="btn btn-primary" href="#" role="button">Register as an Attendee »</a></p>
+                              <p><a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#myModal">Register as an Attendee <span class="glyphicon glyphicon-menu-right"></span></a></p>
                           </div>
                       </div>
                   </div>
@@ -81,6 +82,29 @@
         <p>© 2016 MakeIndy</p>
       </footer> -->
     </div>
+</div>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button> -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Not Available</h4>
+      </div>
+      <div class="modal-body">
+        Sorry, we are not accepting registrations at this time. Please check back later!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

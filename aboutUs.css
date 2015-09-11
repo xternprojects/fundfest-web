@@ -6,14 +6,37 @@ body {
 }
 
 .navbar {
-    background:black;
+    background:rgba(0,0,0,.75);
     border-radius:0px;
     border:none;
+    position:fixed;
+    width:100%;
+    z-index:1;
+}
+
+.contentDiv {
+    padding-top:75px;
 }
 
 .navbar-default .navbar-brand {
     color:white;
     font-weight:bold;
+}
+
+.btn-primary {
+    background:#00838F;
+    border:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+    box-shadow:none;
+    text-shadow:none;
+    font-weight:300;
+}
+
+.btn-primary:hover {
+    background:#006972;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -64,6 +87,14 @@ h4.light {
     padding-bottom:15px;
 }
 
+.paper a .glyphicon {
+    font-size:.75em;
+}
+
+.modal {
+    color:black;
+}
+
 html, body {
         height: 100%;
         margin: 0;
@@ -71,7 +102,6 @@ html, body {
       }
       #map {
         height: 100%;
-        margin-top:-100px;
       }
 
 footer {

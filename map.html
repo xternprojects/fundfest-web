@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Get Involved | MakeIndy</title>
+    <title>Map | MakeIndy</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -57,10 +57,44 @@
 
         var map;
         function initMap() {
+
+            var customMapType = new google.maps.StyledMapType([
+              {
+                stylers: [
+                  {gamma: .35}
+                ]
+              }
+            ], {
+              name: 'Custom Style'
+          });
+          var customMapTypeId = 'custom_style';
+
           map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: 39.7683333, lng: -86.1580556},
-            zoom: 17
+            zoom: 17,
+            disableDefaultUI: true,
+            zoomControl: true,
+            mapTypeControlOptions: {
+                mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+            },
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.LARGE,
+                position: google.maps.ControlPosition.LEFT_CENTER
+            },
+            scaleControl: true,
+            streetViewControl: true,
+            streetViewControlOptions: {
+                position: google.maps.ControlPosition.LEFT_BOTTOM
+            },
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                position: google.maps.ControlPosition.BOTTOM_CENTER
+            },
           });
+
+          map.mapTypes.set(customMapTypeId, customMapType);
+          map.setMapTypeId(customMapTypeId);
         }
 
     </script>
